@@ -1,7 +1,9 @@
+import Button from '@mui/material/Button';
+
 export default function Home() {
   return (
     <div>
-      <h1>Projeto Premiação</h1>
+      <Button variant="contained">Premiação</Button>
     </div>
   );
 }
