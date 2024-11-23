@@ -3,6 +3,8 @@
 import React, { useState } from 'react';
 import { Tabs, Tab, Box, Typography, IconButton } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import ShoppingCartRoundedIcon from '@mui/icons-material/ShoppingCartRounded';
+import AccountCircleSharpIcon from '@mui/icons-material/AccountCircleSharp';
 
 export default function Header() {
   const [value, setValue] = useState(0);
@@ -58,8 +60,12 @@ export default function Header() {
               }}
             >
               <Tab label="Home" />
-              <Tab label="Sobre" />
-              <Tab label="Contato" />
+              <Tab label="Ganhadores" />
+              <Tab label="Meus números" />
+              <Tab label="Entrar em contato" />
+              <Tab label={<ShoppingCartRoundedIcon />} />
+              <Tab label={<AccountCircleSharpIcon />} />
+              
             </Tabs>
           </Box>
         </nav>
