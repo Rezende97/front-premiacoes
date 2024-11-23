@@ -1,9 +1,9 @@
-import Button from '@mui/material/Button';
+import Header from './components/Header/HeaderComponent';
 
 export default function Home() {
   return (
     <div>
-      <Button variant="contained">Premiações</Button>
+      <Header />
     </div>
   );
 }
